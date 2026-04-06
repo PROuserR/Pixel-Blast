@@ -60,5 +60,5 @@ Enjoy playing Pixel Blast! 🎉
 
 ## References
 
-[1]: https://www.ruby-lang.org/en/ "Ruby Programming Language Official Website"
-[2]: https://www.libgosu.org/ "Gosu 2D Game Development Library"
+[Ruby](https://www.ruby-lang.org/en/)
+[Gosu](https://www.libgosu.org/)
