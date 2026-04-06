@@ -1,93 +1,61 @@
-# 🎮 Pixel Blast Game
-A game about placing blocks in their right order to reveal the full image over time.
+# Pixel Blast: A Gosu Puzzle Arcade Game 🧩✨
 
-# Tech stack:
-- **Ruby**: Ruby is a general-purpose programming language. It was designed with an emphasis on programming productivity and simplicity. 
-- **Gosu**: Gosu is a 2D game development library for Ruby and C++ that provides a lightweight engine with features for creating 2D games.
+## Introduction
 
-## 1. Setup
-- Install Ruby (2.7+ recommended).
-- Install necessary gems with bundler:
-  ```bash
-  gem install bundler
-  bundle init
-  bundle install
-  ```
+Welcome to **Pixel Blast**, a captivating puzzle arcade game developed with Ruby 💎 and the powerful Gosu 2D graphics library. In this engaging time-based game, players are challenged to strategically place blocks on a canvas. The objective is to complete full rows or columns, which in turn reveals a portion of a hidden image. As you progress, more of the mystery image is unveiled, adding an exciting layer of discovery to the fast-paced block-placement action. 🖼️⏱️
 
-## 2. Basic Game Window
-Every Gosu game starts with a `Gosu::Window` subclass.
+## Project Information
 
-```ruby
-require 'gosu'
+Pixel Blast combines classic arcade puzzle mechanics with a unique visual reward system. The game is designed to be intuitive yet challenging, requiring both quick thinking and spatial reasoning. Key features include:
 
-class GameWindow < Gosu::Window
-  def initialize
-    super 640, 480
-    self.caption = "My First Gosu Game"
-  end
+*   **Dynamic Block Placement**: Players must quickly decide where to place incoming blocks to maximize row/column completions. 🧱
+*   **Image Revelation**: Successfully clearing lines progressively uncovers a hidden image, serving as both a goal and a visual treat. 🎨
+*   **Time-Based Gameplay**: A ticking clock adds pressure, demanding efficient and precise moves. ⏳
+*   **Ruby & Gosu**: Built on the robust Ruby language and leveraging the Gosu library for smooth 2D graphics and sound. 🎶
+*   **Bundle for Dependency Management**: All necessary Ruby gems are managed efficiently using Bundler. 📦
 
-  def update
-    # Game logic goes here (movement, collisions, etc.)
-  end
+This project aims to provide a fun and addictive gaming experience while showcasing the capabilities of Ruby and Gosu for game development. 🚀
 
-  def draw
-    # Rendering goes here (sprites, text, shapes)
-  end
-end
+## Setup
 
-GameWindow.new.show
+To get Pixel Blast up and running on your local machine, follow these simple steps.
+
+### Prerequisites
+
+Ensure you have Ruby installed on your system. If not, you can download it from [ruby-lang.org][1] or use a version manager like `rbenv` or `RVM`.
+
+### Installation
+
+1.  **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/PROuserR/Pixel-Blast.git
+    cd Pixel-Blast
+    ```
+
+    
+
+2.  **Install dependencies with Bundler**:
+
+    Pixel Blast uses Bundler to manage its Ruby gem dependencies, including Gosu. Navigate to the project directory and run:
+
+    ```bash
+    bundle install
+    ```
+
+    This command will read the `Gemfile` and install all required gems.
+
+### Running the Game
+
+Once all dependencies are installed, you can start the game by executing the main Ruby file:
+
+```bash
+ruby run.rb
 ```
 
----
+Enjoy playing Pixel Blast! 🎉
 
-## 3. Drawing Shapes & Text
-```ruby
-def draw
-  Gosu.draw_rect(100, 100, 50, 50, Gosu::Color::RED)   # square
-  font = Gosu::Font.new(20)
-  font.draw_text("Hello Gosu!", 200, 200, 1, 1.0, 1.0, Gosu::Color::WHITE)
-end
-```
+## References
 
----
-
-## 4. Sprites & Images
-```ruby
-def initialize
-  super 640, 480
-  @player = Gosu::Image.new("player.png")
-  @x = @y = 200
-end
-
-def draw
-  @player.draw(@x, @y, 1)
-end
-```
-
----
-
-## 5. Input Handling
-```ruby
-def update
-  @x -= 5 if Gosu.button_down?(Gosu::KB_LEFT)
-  @x += 5 if Gosu.button_down?(Gosu::KB_RIGHT)
-  @y -= 5 if Gosu.button_down?(Gosu::KB_UP)
-  @y += 5 if Gosu.button_down?(Gosu::KB_DOWN)
-end
-```
-
----
-
-## 6. Sounds & Music
-```ruby
-def initialize
-  super 640, 480
-  @beep = Gosu::Sample.new("beep.wav")
-end
-
-def button_down(id)
-  @beep.play if id == Gosu::KB_SPACE
-end
-```
-
-
+[1]: https://www.ruby-lang.org/en/ "Ruby Programming Language Official Website"
+[2]: https://www.libgosu.org/ "Gosu 2D Game Development Library"
