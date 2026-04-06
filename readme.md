@@ -4,6 +4,9 @@
 
 Welcome to **Pixel Blast**, a captivating puzzle arcade game developed with Ruby 💎 and the powerful Gosu 2D graphics library. In this engaging time-based game, players are challenged to strategically place blocks on a canvas. The objective is to complete full rows or columns, which in turn reveals a portion of a hidden image. As you progress, more of the mystery image is unveiled, adding an exciting layer of discovery to the fast-paced block-placement action. 🖼️⏱️
 
+## Screenshot
+![Screenshot](https://github.com/PROuserR/Pixel-Blast/blob/main/Gameplay.png)
+
 ## Project Information
 
 Pixel Blast combines classic arcade puzzle mechanics with a unique visual reward system. The game is designed to be intuitive yet challenging, requiring both quick thinking and spatial reasoning. Key features include:
