@@ -60,5 +60,5 @@ Enjoy playing Pixel Blast! 🎉
 
 ## References
 
-[Ruby](https://www.ruby-lang.org/en/)
+[Ruby](https://www.ruby-lang.org/en/) <br />
 [Gosu](https://www.libgosu.org/)
