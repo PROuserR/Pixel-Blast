@@ -5,8 +5,6 @@ A game about placing blocks in their right order to reveal the full image over t
 - **Ruby**: Ruby is a general-purpose programming language. It was designed with an emphasis on programming productivity and simplicity. 
 - **Gosu**: Gosu is a 2D game development library for Ruby and C++ that provides a lightweight engine with features for creating 2D games.
 
-## Intro 👋
-
 ## 1. Setup
 - Install Ruby (2.7+ recommended).
 - Install necessary gems with bundler:
@@ -92,18 +90,4 @@ def button_down(id)
 end
 ```
 
----
 
-## 7. Structuring Your Game
-- **Entities**: Make small classes for Player, Enemy, Bullet, etc.
-- **Helpers**: Write parameterized methods for spawning, collisions, effects.
-- **Update/Draw Loop**: Keep logic in `update`, visuals in `draw`.
-
-⚡ **Pro tip for modularity**: Always expose parameters (speed, position, color, etc.) in your helpers so you can batch‑spawn and tweak without rewriting logic. That’s how you’ll scale from a toy demo to a flexible toolkit.
-
-## Note
-- **Images**: Put the full path to your own folder of images insead the stock imgaes
-  Please note: the imgaes must be in 1:1 square ratio in order to function properly, otherwise the game is going to crash
-
-## Documentation
-I have generated a pdf file for code documentation, read it for more details.
